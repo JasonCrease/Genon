@@ -5,7 +5,7 @@ namespace Engine
 {
     class Field
     {
-        IRandomVariable _random;
+        IRandomVariable _randomVariable;
 
     }
 }

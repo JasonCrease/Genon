@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{ECE1F05C-C1FA-455D-B888-C61AE5AF9F57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineTests", "EngineTests\EngineTests.csproj", "{A814F7F3-98D8-4E76-9060-2435B8E093F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7673298F-6A74-4779-8A76-3A8B63D6A14D} = {7673298F-6A74-4779-8A76-3A8B63D6A14D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +38,10 @@ Global
 		{ECE1F05C-C1FA-455D-B888-C61AE5AF9F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE1F05C-C1FA-455D-B888-C61AE5AF9F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE1F05C-C1FA-455D-B888-C61AE5AF9F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A814F7F3-98D8-4E76-9060-2435B8E093F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A814F7F3-98D8-4E76-9060-2435B8E093F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A814F7F3-98D8-4E76-9060-2435B8E093F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A814F7F3-98D8-4E76-9060-2435B8E093F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,5 +10,7 @@ namespace Engine.Randoms.Text
 
         public abstract String AsString();
         public abstract void Generate(Random random);
+        public abstract string AsXml();
+        public abstract void SetFromXml();
     }
 }

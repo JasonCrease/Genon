@@ -1,9 +1,10 @@
 ﻿using Genon.Interfaces.Randoms;
 using System.Collections.Generic;
+using System;
 
 namespace Engine
 {
-    abstract class Schema
+    class Schema
     {
         IList<IRandomVariable> _fields;
 
@@ -15,6 +16,11 @@ namespace Engine
         public IRandomVariable GetField(int fieldNum)
         {
             return _fields[fieldNum];
+        }
+
+        internal String SerializeAsXml()
+        {
+            throw new NotImplementedException();
         }
     }
 }

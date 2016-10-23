@@ -9,7 +9,17 @@ namespace Engine.Randoms.Text
             throw new NotImplementedException();
         }
 
+        public override string AsXml()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Generate(Random random)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetFromXml()
         {
             throw new NotImplementedException();
         }

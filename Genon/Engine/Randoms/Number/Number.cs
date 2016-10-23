@@ -3,9 +3,11 @@ using System;
 
 namespace Engine.Randoms.Number
 {
-    abstract class Number : IRandomVariable
+    internal abstract class Number : IRandomVariable
     {
         public abstract String AsString();
+        public abstract string AsXml();
         public abstract void Generate(Random random);
+        public abstract void SetFromXml();
     }
 }

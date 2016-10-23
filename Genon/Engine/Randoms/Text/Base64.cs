@@ -26,5 +26,15 @@ namespace Engine.Randoms.Text
 
             str = new string(chars);
         }
+
+        public override string AsXml()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetFromXml()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

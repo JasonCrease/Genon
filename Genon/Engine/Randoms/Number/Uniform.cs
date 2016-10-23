@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+
 
 namespace Engine.Randoms.Number
 {
-    class Uniform : Number
+    internal class Uniform : Number
     {
-        long MinValue { get; set; }
-        long MaxValue { get; set; }
+        public long MinValue { get; set; }
+        public long MaxValue { get; set; }
 
         long _Value;
 
@@ -17,23 +19,26 @@ namespace Engine.Randoms.Number
 
         public override String AsString()
         {
-            throw new NotImplementedException();
+            return _Value.ToString();
         }
 
         public override void Generate(Random random)
         {
             if (IsLong)
-                _Value = random.Next((int)MinValue, (int)MaxValue);
+                throw new NotImplementedException("Cannot generate longs yet");
             else
-            {
-                // From http://stackoverflow.com/questions/6651554/random-number-in-long-range-is-this-the-way. 
-                // Make better solution!
-                long result = random.Next((Int32)(MinValue >> 32), (Int32)(MaxValue >> 32));
-                result = (result << 32);
-                result = result | (long)random.Next((Int32)MinValue, (Int32)MaxValue);
-                _Value = result;
-            }
+                _Value = random.Next((int)MinValue, (int)MaxValue);
 
+        }
+
+        public override string AsXml()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetFromXml()
+        {
+            throw new NotImplementedException();
         }
     }
 }
